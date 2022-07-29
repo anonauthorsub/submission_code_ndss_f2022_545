@@ -1,0 +1,16 @@
+.DS_Store
+.vs
+
+.vscode/**
+!.vscode/launch.json
+!.vscode/settings.json
+
+
+**/*/.DS_Store
+Cargo.lock
+**/Cargo.lock
+**/*.rs.bk
+
+**/target
+
+**/*.log
