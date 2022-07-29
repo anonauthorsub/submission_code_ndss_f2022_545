@@ -1,0 +1,103 @@
+Starting micro-benchmarks:
+   383.80 +/- 1.55  ms ...............................create notification
+    88.00 +/- 1.15  ms ...............................verify notification
+     0.00 +/- 0.00  ms .......................................create vote
+     0.00 +/- 0.00  ms .......................................verify vote
+     0.00 +/- 0.00  ms .............................aggregate certificate
+     0.00 +/- 0.00  ms ................................verify certificate
+     9.00 +/- 0.00  ms ...................publish_batch_size_32_in_memory
+    38.90 +/- 0.57  ms ..................publish_batch_size_128_in_memory
+   344.00 +/- 9.49  ms .................publish_batch_size_1024_in_memory
+  12740.90 +/- 43.71 ms ................publish_batch_size_32768_in_memory
+    26.40 +/- 0.52  ms ..................publish_batch_size_32_persistent
+    57.70 +/- 0.67  ms .................publish_batch_size_128_persistent
+   367.20 +/- 1.23  ms ................publish_batch_size_1024_persistent
+  13339.20 +/- 27.06 ms ...............publish_batch_size_32768_persistent
+***********************************************************
+Number of key entries: 32
+
+** DB Stats **
+Uptime(secs): 0.0 total, 0.0 interval
+Cumulative writes: 98 writes, 98 keys, 98 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 1.14 MB/s
+Cumulative WAL: 98 writes, 0 syncs, 98.00 writes per sync, written: 0.00 GB, 1.14 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 98 writes, 98 keys, 98 commit groups, 1.0 writes per commit group, ingest: 0.03 MB, 1.14 MB/s
+Interval WAL: 98 writes, 0 syncs, 98.00 writes per sync, written: 0.00 GB, 1.14 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+Memory usage stats: Mem table total: 2048, Mem table unflushed: 2048, Mem table readers total: 276, Cache total: 0
+File: "./.micro_benchmark_vkd_storage/CURRENT", size: 16 bytes.
+File: "./.micro_benchmark_vkd_storage/IDENTITY", size: 36 bytes.
+File: "./.micro_benchmark_vkd_storage/MANIFEST-000004", size: 142 bytes.
+File: "./.micro_benchmark_vkd_storage/LOCK", size: 0 bytes.
+File: "./.micro_benchmark_vkd_storage/OPTIONS-000007", size: 6535 bytes.
+File: "./.micro_benchmark_vkd_storage/LOG", size: 22329 bytes.
+File: "./.micro_benchmark_vkd_storage/000008.log", size: 0 bytes.
+File: "./.micro_benchmark_vkd_storage/000009.sst", size: 15904 bytes.
+***********************************************************
+***********************************************************
+Number of key entries: 128
+
+** DB Stats **
+Uptime(secs): 0.1 total, 0.1 interval
+Cumulative writes: 386 writes, 386 keys, 386 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 2.02 MB/s
+Cumulative WAL: 386 writes, 0 syncs, 386.00 writes per sync, written: 0.00 GB, 2.02 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 386 writes, 386 keys, 386 commit groups, 1.0 writes per commit group, ingest: 0.11 MB, 2.02 MB/s
+Interval WAL: 386 writes, 0 syncs, 386.00 writes per sync, written: 0.00 GB, 2.02 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+Memory usage stats: Mem table total: 2048, Mem table unflushed: 2048, Mem table readers total: 675, Cache total: 0
+File: "./.micro_benchmark_vkd_storage/CURRENT", size: 16 bytes.
+File: "./.micro_benchmark_vkd_storage/IDENTITY", size: 36 bytes.
+File: "./.micro_benchmark_vkd_storage/MANIFEST-000004", size: 145 bytes.
+File: "./.micro_benchmark_vkd_storage/LOCK", size: 0 bytes.
+File: "./.micro_benchmark_vkd_storage/OPTIONS-000007", size: 6535 bytes.
+File: "./.micro_benchmark_vkd_storage/LOG", size: 22338 bytes.
+File: "./.micro_benchmark_vkd_storage/000008.log", size: 0 bytes.
+File: "./.micro_benchmark_vkd_storage/000009.sst", size: 60802 bytes.
+***********************************************************
+***********************************************************
+Number of key entries: 1024
+
+** DB Stats **
+Uptime(secs): 0.4 total, 0.4 interval
+Cumulative writes: 3074 writes, 3074 keys, 3074 commit groups, 1.0 writes per commit group, ingest: 0.00 GB, 2.47 MB/s
+Cumulative WAL: 3074 writes, 0 syncs, 3074.00 writes per sync, written: 0.00 GB, 2.47 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 3074 writes, 3074 keys, 3074 commit groups, 1.0 writes per commit group, ingest: 0.91 MB, 2.47 MB/s
+Interval WAL: 3074 writes, 0 syncs, 3074.00 writes per sync, written: 0.00 GB, 2.47 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+Memory usage stats: Mem table total: 2048, Mem table unflushed: 2048, Mem table readers total: 4619, Cache total: 0
+File: "./.micro_benchmark_vkd_storage/CURRENT", size: 16 bytes.
+File: "./.micro_benchmark_vkd_storage/IDENTITY", size: 36 bytes.
+File: "./.micro_benchmark_vkd_storage/MANIFEST-000004", size: 145 bytes.
+File: "./.micro_benchmark_vkd_storage/LOCK", size: 0 bytes.
+File: "./.micro_benchmark_vkd_storage/OPTIONS-000007", size: 6535 bytes.
+File: "./.micro_benchmark_vkd_storage/LOG", size: 22348 bytes.
+File: "./.micro_benchmark_vkd_storage/000008.log", size: 0 bytes.
+File: "./.micro_benchmark_vkd_storage/000009.sst", size: 477391 bytes.
+***********************************************************
+***********************************************************
+Number of key entries: 32768
+
+** DB Stats **
+Uptime(secs): 13.4 total, 13.4 interval
+Cumulative writes: 98K writes, 98K keys, 98K commit groups, 1.0 writes per commit group, ingest: 0.03 GB, 2.18 MB/s
+Cumulative WAL: 98K writes, 0 syncs, 98306.00 writes per sync, written: 0.03 GB, 2.18 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 98K writes, 98K keys, 98K commit groups, 1.0 writes per commit group, ingest: 29.22 MB, 2.18 MB/s
+Interval WAL: 98K writes, 0 syncs, 98306.00 writes per sync, written: 0.03 GB, 2.18 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+Memory usage stats: Mem table total: 2048, Mem table unflushed: 2048, Mem table readers total: 154447, Cache total: 0
+File: "./.micro_benchmark_vkd_storage/CURRENT", size: 16 bytes.
+File: "./.micro_benchmark_vkd_storage/IDENTITY", size: 36 bytes.
+File: "./.micro_benchmark_vkd_storage/MANIFEST-000004", size: 148 bytes.
+File: "./.micro_benchmark_vkd_storage/LOCK", size: 0 bytes.
+File: "./.micro_benchmark_vkd_storage/OPTIONS-000007", size: 6535 bytes.
+File: "./.micro_benchmark_vkd_storage/LOG", size: 22373 bytes.
+File: "./.micro_benchmark_vkd_storage/000008.log", size: 0 bytes.
+File: "./.micro_benchmark_vkd_storage/000009.sst", size: 15297905 bytes.
+***********************************************************

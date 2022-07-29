@@ -1,0 +1,23 @@
+{
+    "testbed": "anon-key-transparency",
+    "key": {
+        "name": "aws",
+        "path": "$HOME/.ssh/aws"
+    },
+    "port": 5000,
+    "repo": {
+        "name": "key-transparency",
+        "url": "https://github.com/anonauthorsub/submission_code_ndss_f2022_545/tree/main/key-transparency",
+        "branch": "main"
+    },
+    "instances": {
+        "type": "t3.medium",
+        "regions": [
+            "us-east-1",
+            "eu-central-1",
+            "ap-southeast-2",
+            "ap-northeast-1",
+            "us-west-1"
+        ]
+    }
+}
