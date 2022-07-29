@@ -1,0 +1,25 @@
+[package]
+name = "vkd_integration_tests"
+version = "0.0.0"
+authors = ["Anon. authors of NDSS Submission #545"]
+edition = "2018"
+publish = false
+
+[dependencies]
+winter-crypto = "0.2"
+winter-math = "0.2"
+
+[dev-dependencies]
+log = { version = "0.4.8", features = ["kv_unstable"] }
+tokio = { version = "1.10", features = ["full"] }
+serial_test = "*"
+mysql_async = "0.29"
+rand = "0.7"
+once_cell = "1"
+thread-id = "3"
+multi_log = "0.1"
+hex = "0.4.3"
+
+vkd = { path = "../vkd", features = ["public-tests", "rand", "serde_serialization"] }
+vkd_mysql = { path = "../vkd_mysql" }
+vkd_test_tools = { path = "../vkd_test_tools" }

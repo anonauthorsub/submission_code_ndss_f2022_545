@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+    "vkd",
+    "vkd_mysql",
+    "poc",
+    "integration_tests",
+    "vkd_client",
+    "vkd_test_tools"
+]
